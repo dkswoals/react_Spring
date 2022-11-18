@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+</head>
+
+<body>
+
+<table>
+    <tr style="background-color:grey">
+        <th>작업</th>
+        <th>완료상태</th>
+        <th> </th>
+    </tr>
+
+    <tr th:each ="list:${Todo}" style="background-color:lightgray">
+        <td th:text = "${list.todo}"></td>
+        <td th:text = "${list.complete}"></td>
+        <form>
+            <td> <input type="submit" name = "todolist"  th : value=${list.current} >완료하기</input> </td>
+        </form>
+    </tr>
+</table>
+
+<form action="/AUTH/insert_todo" method="post">
+    <td> <input type="text" name = "todo" ></input> </td>
+    <button type="submit" >작업추가</button>
+</form>
+</body>
+</html>

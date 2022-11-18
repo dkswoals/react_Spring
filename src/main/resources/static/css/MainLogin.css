@@ -1,0 +1,17 @@
+.container{
+    width: 300px; margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    position: relative; top: 70px;
+}
+.option_container{
+    position: relative; top: 50px;
+    text-align: center;
+}
+.up_page{
+    position: relative; top: 50px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}

@@ -1,0 +1,6 @@
+.container{
+    width: 300px; margin: auto;
+    position: relative; top: 70px;
+    font-weight: bolder;
+    text-align: center;
+}
