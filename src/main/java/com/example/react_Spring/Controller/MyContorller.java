@@ -1,6 +1,7 @@
 package com.example.react_Spring.Controller;
 
 import com.example.react_Spring.DTO.testDTO;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,10 +13,11 @@ import java.util.List;
 @RestController
 public class MyContorller {
 
+    @CrossOrigin("http://192.168.0.6:3000")
     @GetMapping("/api/hello")
     public String hello(){
         System.out.println("확인");
-        return "선물";
+        return "world";
     }
 
     @PostMapping("/api/test")
