@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f6f5f7;
+}
+  
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+  
+.singup_container{
+  height: 800px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+  0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+  background: #f6f5f7;
+  
+}
+  
+.head{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
+}
+  
+.singup_tain{
+    float: left;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.name_tain{
+    margin-bottom: 30px;
+}
+  
+.id_tain{
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+  
+.idchek{
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+  
+.pw_tain{
+    margin-bottom: 30px;
+}
+  
+.pw1_tain{
+  
+ margin-bottom: 30px;
+}
+  
+.chek_tain{
+    margin-bottom: 30px;
+    border: 1px solid rgb(145, 144, 144);
+    border-radius: 15px;
+}
+  
+.mail_tain{
+    margin-bottom: 30px;
+  
+}
+  
+.phone_tain{
+    margin-bottom: 30px;
+}
+  
+.btn_container{
+  
+    margin-bottom: 30px;
+}
+
+
+.pwalr{
+    float: left;
+    color: red;
+}

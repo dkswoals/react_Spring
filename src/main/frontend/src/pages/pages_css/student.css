@@ -1,0 +1,35 @@
+*{
+
+    box-sizing: border-box;
+}
+
+
+
+.Student_main_container{
+    border: 1px solid palegoldenrod;
+    width: 100vh;
+    height: 100vh;
+}
+
+.head{
+    border: 1px solid rgb(48, 160, 26);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+   
+}
+
+
+
+
+h5{
+    size: 20px;
+}
+
+
+.user_info{
+    border: 1px solid red;
+    display: flex;
+    float: right;
+}

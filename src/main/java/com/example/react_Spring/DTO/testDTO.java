@@ -8,5 +8,6 @@ import lombok.*;
 @Setter
 @Data
 public class testDTO {
-    String string;
+    String a;
+    String b;
 }

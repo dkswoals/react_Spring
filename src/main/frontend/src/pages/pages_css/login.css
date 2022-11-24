@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    background: #f6f5f7;
+  }
+  
+  .App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .login_container{
+   
+    height: 500px;
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+    0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    background: #f6f5f7;
+  
+  }
+  img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .img_area{
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25),
+    0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+    object-fit:cover
+  }
+  
+  .login_form{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+  }
+  
+  h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  
+  }
+  
+  
+  .id_container{
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .pw_container{
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+  
+  }
+  
+  .idremem{
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .bt_container{
+  
+    margin-left: 30px;
+    margin-right: 30px;
+  
+  
+  }
+  
+  .rink_container{
+    margin-top: 15px;
+    font-style: none;
+  }
