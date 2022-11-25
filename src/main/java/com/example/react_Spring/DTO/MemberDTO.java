@@ -26,4 +26,15 @@ public class MemberDTO{
         this.Phone = Phone;
         this.Level = Level;
     }
+
+    @Builder
+    public MemberDTO(Member member){
+        this.UserId = member.getUserid();
+        this.Name = member.getName();
+        this.Pwd = member.getPwd();
+        this.Email = member.getEmail();
+        this.SchoolId = member.getSchoolid();
+        this.Phone = member.getPhone();
+        this.Level = member.getLevel();
+    }
 }

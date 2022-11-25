@@ -11,7 +11,6 @@ import java.util.Optional;
 @Service
 @Transactional
 public class MemberService {
-
       private final MemberRepository repository;
 
     public MemberService(MemberRepository repository) {
@@ -19,7 +18,7 @@ public class MemberService {
     }
 
     public Long join(Member member){
-      //  validateDuplicateMember(member);
+        validateDuplicateMember(member);
         repository.save(member);
         return member.getId();
     }
@@ -35,16 +34,14 @@ public class MemberService {
                 .ifPresent(m -> {
                     throw new IllegalStateException("이미 존재하는 회원입니다");
                 });
-
     }
 
     public List<Member> findMembers(){
         return repository.findAll();
     }
 
-    public Optional<Member> findId(String name,String email){
-        return repository.findByNameAndEmail(name,email);
+    public Member findId(String name,String email){
+        return repository.findByNameAndEmail(name,email).orElse(null);
     }
-
 
 }

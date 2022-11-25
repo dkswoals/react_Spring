@@ -8,6 +8,7 @@ import Student from "./pages/student";
 import Teachermain from "./pages/teachermain";
 import Cheat from "./pages/cheat";
 import Test from "./pages/test";
+import Test2 from "./pages/test2";
 
 
 function mainproj() {
@@ -17,6 +18,7 @@ function mainproj() {
       <Route path="/singup"  element={<Singup/>} />
       <Route path="/forgot"  element={<Forgot/>} />
       <Route path="/test"  element={<Test/>} />
+        <Route path="/test2"  element={<Test2/>} />
       <Route path="/teachermain"  element={<Teachermain/>} />
       <Route path="/studentmain"  element={<Student/>} />
       <Route path="/cheat"  element={<Cheat/>} />
